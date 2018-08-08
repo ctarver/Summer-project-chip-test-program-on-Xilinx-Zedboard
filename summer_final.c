@@ -82,7 +82,7 @@ close(fd);                        \
 
 void WR_FILE(FILE *file, char *chip, int i){
 	
-   fprintf(file, "%s[%d]", "read", i);
+   fprintf(file, "%s[%d]", "dout", i);
    for(i = 0; i < TEST_CYCLE; i++)
 	   fprintf(file, " %c", chip[i]);
    fprintf(file, "\n");
